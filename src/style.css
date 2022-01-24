@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+}
+
+
+.post_div, .comment_div, .user_div {
+    border: 2px solid red;
+    background-color: lightgray;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.posts {
+    margin-left: 10px;
+    height: 800px;
+    overflow-y: scroll;
+}
+
+.comments {
+    margin-top: 20px;
+    overflow-y: scroll;
+    height: 500px;
+    width: 1050px;
+    margin-bottom: 10px;
+}
