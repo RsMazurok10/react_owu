@@ -1,0 +1,14 @@
+.user_info{
+    border:2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    width: max-content;
+    height: max-content;
+}
+
+.info{
+    margin-top:5px ;
+    border-radius: 10px;
+    padding: 5px;
+}

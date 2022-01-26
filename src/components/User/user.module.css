@@ -1,0 +1,10 @@
+.user{
+    margin-bottom: 5px;
+    border:2px solid black;
+    padding: 5px;
+}
+.btn_user{
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
