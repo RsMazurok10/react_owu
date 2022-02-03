@@ -1,0 +1,20 @@
+
+.inputs{
+   padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+input{
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 90%;
+}
+button{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: lightgray;
+    font-family: Rockwell;
+    font-size: 14px;
+}

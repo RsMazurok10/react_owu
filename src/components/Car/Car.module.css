@@ -1,0 +1,13 @@
+.car{
+    background-color: lightslategray;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    width: 300px;
+}
+
+button{
+    margin-top: 10px;
+    margin-right: 10px;
+    width:100px;
+}

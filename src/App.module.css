@@ -1,0 +1,10 @@
+.wrap{
+    border:2px solid darkgreen;
+    margin: 5px;
+    padding: 10px;
+    width: max-content;
+    border-radius: 10px;
+    background-color:beige;
+    font-size: 18px;
+    font-family: Rockwell;
+}
