@@ -1,0 +1,16 @@
+.header{
+    background-color:lightgray;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bold;
+    column-gap: 20px;
+    padding: 10px;
+}
+
+
+.users,.posts{
+    text-decoration: none;
+    color: black;
+}
