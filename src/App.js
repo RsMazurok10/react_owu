@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route, Navigate} from 'react-router-dom'
+
+import Layout from "./components/Layout/Layout";
+
+import {
+    UsersPage,
+    UsersInfoPage,
+    UsersPostPage,
+    UsersAlbumsPage,
+    PostsCommentPage,
+    PostsInfoPage,
+    AlbumsPhotoPage,
+    PostsPage
+} from "./pages";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Routes>
+            <Route path={'/'} element={<Layout/>}>
+
+                <Route index element={<Navigate to={'users'}/>}/>
+                <Route path={'users'} element={<UsersPage/>}>
+                    <Route path={':id'} element={<UsersInfoPage/>}>
+                        <Route path={'posts'} element={<UsersPostPage/>}/>
+                    </Route>
+
+                    <Route path={':id/albums'} element={<UsersAlbumsPage/>}>
+                        <Route path={':albumId/photos'} element={<AlbumsPhotoPage/>}/>
+                    </Route>
+                </Route>
+
+                <Route path={'posts'} element={<PostsPage/>}>
+                    <Route path={':id'} element={<PostsInfoPage/>}>
+                        <Route path={'comments'} element={<PostsCommentPage/>}/>
+                    </Route>
+                </Route>
+
+            </Route>
+        </Routes>
+    );
 }
 
 export default App;
