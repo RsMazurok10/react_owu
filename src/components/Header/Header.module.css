@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    column-gap: 20px;
+    padding: 5px;
+    justify-content: center;
+    background-color:palegreen;
+    margin-bottom: 50px;
+}
+
+.header button{
+    padding: 2px;
+    border-radius: 20px;
+    width: 100px;
+    font-size: 25px;
+}

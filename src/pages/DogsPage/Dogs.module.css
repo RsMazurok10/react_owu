@@ -1,0 +1,14 @@
+.dogs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dogs button{
+    margin: 10px;
+    padding: 2px;
+    border-radius: 20px;
+    width: 100px;
+    font-size: 20px;
+}
