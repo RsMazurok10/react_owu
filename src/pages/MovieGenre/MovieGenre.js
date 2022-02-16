@@ -8,7 +8,7 @@ import css from '../../style.module.css';
 
 
 const MovieGenre = () => {
-    const {white} = useSelector(state => state['themeReducers']);
+    const {light} = useSelector(state => state['themeReducers']);
 
     const {routeId} = useParams();
 
@@ -51,12 +51,12 @@ const MovieGenre = () => {
 
     return (
         <div>
-            <div className={white ? css.light : css.dark}>
+            <div className={light ? css.light : css.dark}>
                 {movieArray && movieArray.map(movie =>
                     <Movie key={movie.id} movie={movie}/>
                 )}
             </div>
-            <div className={white ? css.light_buttons : css.dark_buttons}>
+            <div className={light ? css.light_buttons : css.dark_buttons}>
                 <button onClick={() => previousPage()}> Попередня сторінка</button>
                 <button onClick={() => nextPage()}> Наступна сторінка</button>
             </div>

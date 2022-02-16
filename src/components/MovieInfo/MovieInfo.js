@@ -5,13 +5,13 @@ import {useSelector} from "react-redux";
 
 const MovieInfo = () => {
 
-    const {white} = useSelector(state => state['themeReducers']);
+    const {light} = useSelector(state => state['themeReducers']);
 
     const {movie} = useSelector(state => state['moviePageReducer']);
 
 
     return (
-        <div className={white ? css.light_data : css.dark_data}>
+        <div className={light ? css.light_data : css.dark_data}>
             {movie.genres &&
             <div className={css.genre_block}>
                 <h3>Жанри: </h3>

@@ -7,7 +7,7 @@ import css from '../../pages/GenrePage/genrePage.module.css';
 import {getAllGenres} from "../../store/slice/GenrePage.slice";
 
 const GenreBadge = () => {
-    const {white} = useSelector(state => state['themeReducers']);
+    const {light} = useSelector(state => state['themeReducers']);
 
     const {genres} = useSelector(state => state['genrePageReducer']);
     const dispatch = useDispatch();
@@ -19,8 +19,8 @@ const GenreBadge = () => {
     const genresArray = genres.genres;
 
     return (
-        <div className={white ? css.light_genre : css.dark_genre}>
-            <h3 className={white ? css.light_name : css.dark_name}>Genre:</h3>
+        <div className={light ? css.light_genre : css.dark_genre}>
+            <h3 className={light ? css.light_name : css.dark_name}>Genre:</h3>
             <div className={css.genre__wrap}>
                 {genresArray && genresArray.map(genre =>
                     <NavLink key={genre.id} to={genre.id + ''} state={genre}>

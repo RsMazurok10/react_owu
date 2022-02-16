@@ -10,22 +10,10 @@ import PosterPreview from "../../components/PosterPreview/PosterPreview";
 
 
 const MoviePage = () => {
-    const {white} = useSelector(state => state['themeReducers']);
-
-    const {movieId} = useParams();
-
-    const {movie, status} = useSelector(state => state['moviePageReducer']);
-
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-        dispatch(getMovie(movieId));
-    }, []);
 
 
     return (
         <div>
-            {status === 'pending'}
                 <div className={css.movie_wrap}>
                     <PosterPreview/>
                     <MovieInfo/>
