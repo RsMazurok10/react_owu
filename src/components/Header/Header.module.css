@@ -1,0 +1,78 @@
+:root {
+    --dark: black;
+}
+
+.dark_header {
+    height: 50px;
+    width: 100%;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+.light_header {
+    background-color: lightgray;
+    color: #161616;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+
+.light_nav,
+.dark_nav {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.dark_nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    transition: all .2s linear;
+}
+
+.light_nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #121212;
+    font-weight: 500;
+    transition: all .2s linear;
+}
+
+.nav a[class='active'],
+.light_nav a[class='active'] {
+    text-decoration: underline;
+}
+
+.dark_switch {
+    width: 120px;
+    padding: 2px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: gray;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .2s linear;
+}
+.light_switch {
+    width: 120px;
+    padding: 2px;
+    border-radius: 50px;
+    background-color: #121212;
+    color: white;
+    border: grey;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .1s linear;
+}

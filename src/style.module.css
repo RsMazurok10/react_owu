@@ -1,0 +1,131 @@
+:root {
+    --dark: #030b26
+}
+
+.dark {
+    background-color:#1b191b;
+    width: 100%;
+    min-height: calc(100vh - 214px);
+    display: flex;
+    padding: 100px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.light {
+    background-color: white;
+    width: 100%;
+    min-height: calc(100vh - 214px);
+    display: flex;
+    padding: 100px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.movie_wrap{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.dark_wrap {
+    width: 18%;
+    height: 400px;
+    color: #121212;
+    text-align: center;
+    background-color: white;
+    box-shadow: 10px 5px 10px white;
+}
+
+.light_wrap {
+    width: 18%;
+    height: 400px;
+    color: white;
+    box-shadow: 10px 5px 10px black;
+    text-align: center;
+    background-color: #121212;
+}
+
+.film__title{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.picture_wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 370px;
+}
+
+
+.picture {
+    height: 100%;
+    width: 98%;
+}
+
+
+.dark_buttons {
+    background-color:#1b191b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 25px;
+    padding-bottom: 50px;
+}
+
+.light_buttons {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 25px;
+    padding: 50px;
+}
+
+.dark_buttons > button {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    background: none;
+    cursor: pointer;
+    transition: .2s linear;
+    border-radius: 50px;
+    margin:20px;
+}
+
+.light_buttons > button {
+    color: #121212;
+    text-transform: uppercase;
+    font-size: 20px;
+    background:none;
+    cursor: pointer;
+    transition: .2s linear;
+    border-radius: 50px;
+    margin:20px;
+}
+
+a {
+    color: inherit;
+}
+.title_list{
+    margin-left: 100px;
+    background-color: white;
+}
+
+.title_list_dark{
+    margin-left: 100px;
+}
