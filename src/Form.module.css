@@ -1,0 +1,16 @@
+.forms{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.elems{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dog,.cat{
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 5px;
+}
